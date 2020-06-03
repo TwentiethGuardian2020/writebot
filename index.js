@@ -22,6 +22,12 @@ Discord.on('message', async (msg) => {
     if (msg.content.startsWith('.randquote2')) {
     msg.channel.send(`"What can be done... can be undone."`);
     }
+    if (msg.content.starsWith('.randquote3')) {
+    msg.channel.send(' "How do you fight someone smarter than yourself?" Rand whispered. "The anser is simple. You make her think that you are sitting down across the table from her, ready to play her game. Then you punch her in the face as hard as you can.”')
+    }
+    if (msg.content.starsWith('.WoTquote')) {
+    msg.channel.send(' "The last days are upon us. If you have grudges, put them behind you. If you have plots, bring them to completion. Make your final plays, for this... this is the end." ')
+      }
     if (msg.content.startsWith('.gandalfquote1')) {
     msg.channel.send(`"YOU...SHALL NOT... PASS!"`);
       }
