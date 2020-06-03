@@ -10,7 +10,7 @@ Discord.on('message', async (msg) => {
     }
     if (msg.content.startsWith('>createchannel')) {
       var name = msg.content.replace('>createchannel ', '')
-      msg.guild.createChannel(name, 'text')
+      msg.guild.channels.create(name)
     }
 });
 Discord.login(process.env.TOKEN)
