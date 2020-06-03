@@ -19,6 +19,8 @@ Discord.on('message', async (msg) => {
     It was about a woman who would not bend her back while she was beaten, and who shown with a light for all who watched, including Rand.
     It was about them all."`);
     }
+    if (msg.content.startsWith('>randquote2')) {
+    msg.channel.send(`"What can be done... can be undone."`);
     if (msg.content.startsWith('>gandalfquote1')) {
     msg.channel.send(`"YOU...SHALL NOT... PASS!"`);
       }
