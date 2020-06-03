@@ -22,10 +22,15 @@ Discord.on('message', async (msg) => {
     if (msg.content.startsWith('>gandalfquote1')) {
     msg.channel.send(`"YOU...SHALL NOT... PASS!"`);
       }
+    if (msg.content.startsWith('>gandalfquote2')) {
+    msg.channel.send(`"FLY YOU FOOLS!"`);
+      }
+    if (msg.content.startsWith('>gandalfquote3')) {
+    msg.channel.send('"Fool of a Took!"')
+    }
     if (msg.content.startsWith('>createchannel')) {
       var name = msg.content.replace('>createchannel ', '')
       msg.guild.channels.create(name)
     }
-    
 });
 Discord.login(process.env.TOKEN)
