@@ -6,7 +6,7 @@ Discord.on('message', async (msg) => {
     msg.channel.send(`WRITE, YOU FOOL, WRITE! ${msg.mentions.members.first()}`);
     }
     if (msg.content.startsWith('>moirainequote')) {
-    msg.channel.send(`The Wheel weaves as the Wheel wills. ${msg.mentions.members.first()}`);
+    msg.channel.send(`The Wheel weaves as the Wheel wills.`);
     }
     if (msg.content.startsWith('>randquote')) {
     msg.channel.send(`“Here is your flaw, Shaitan, Lord of the Dark, Lord of Envy, Lord of Nothing, here is why you fail. It was not about me. It’s never been about me.”
@@ -17,7 +17,7 @@ Discord.on('message', async (msg) => {
     It was about a woman who refused to believe that she could not help, could not heal those who had been harmed.
     It was about a hero who insisted with every breath that he was anything but a hero.
     It was about a woman who would not bend her back while she was beaten, and who shown with a light for all who watched, including Rand.
-    It was about them all. ${msg.mentions.members.first()}`);
+    It was about them all.`);
     }
     if (msg.content.startsWith('>createchannel')) {
       var name = msg.content.replace('>createchannel ', '')
