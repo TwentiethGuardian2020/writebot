@@ -8,5 +8,9 @@ Discord.on('message', async (msg) => {
     if (msg.content.startsWith('>moirainequote')) {
     msg.channel.send(`The Wheel weaves as the Wheel wills. ${msg.mentions.members.first()}`);
     }
+    if (msg.content.startsWith('>createchannel')) {
+      var name = msg.content.replace('>createchannel ', '')
+      msg.guild.createChannel(name, 'text')
+    }
 });
 Discord.login(process.env.TOKEN)
