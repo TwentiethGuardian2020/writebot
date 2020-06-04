@@ -28,13 +28,13 @@ Discord.on('message', async (msg) => {
     if (msg.content.starsWith('.WoTquote')) {
     msg.channel.send(' "The last days are upon us. If you have grudges, put them behind you. If you have plots, bring them to completion. Make your final plays, for this... this is the end." ')
       }
-    if (msg.content.startsWith('.gandalfquote1')) {
+    if (msg.content.startsWith('.LoTRquote1')) {
     msg.channel.send(`"YOU...SHALL NOT... PASS!"`);
       }
-    if (msg.content.startsWith('.gandalfquote2')) {
+    if (msg.content.startsWith('.LoTRquote2')) {
     msg.channel.send(`"FLY YOU FOOLS!"`);
       }
-    if (msg.content.startsWith('.gandalfquote3')) {
+    if (msg.content.startsWith('.LoTRquote3')) {
     msg.channel.send('"Fool of a Took!"')
     }
 
