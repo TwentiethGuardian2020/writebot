@@ -15,11 +15,11 @@ Discord.on('message', async (msg) => {
     msg.channel.send(`"FLY YOU FOOLS!"`);
       }
     if (msg.content.startsWith('>gandalfquote2')) {
-    msg.channel.send('"Fool of a Took!"')
+    msg.channel.send('"Fool of a Took!"');
     }
 
     if (msg.content.startsWith('>createchannel')) {
-      var name = msg.content.replace('>createchannel ', '')
+      var name = msg.content.replace('>createchannel ', '');
       msg.guild.channels.create(name)
     }
 });
