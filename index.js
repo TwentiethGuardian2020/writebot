@@ -9,17 +9,17 @@ Discord.on('message', async (msg) => {
     msg.channel.send(`"The Wheel weaves as the Wheel wills."`);
     }
     if (msg.content.starsWith('>wotquote2')) {
-    msg.channel.send(' "The last days are upon us. If you have grudges, put them behind you. If you have plots, bring them to completion. Make your final plays, for this... this is the end." ');
+    msg.channel.send(` "The last days are upon us. If you have grudges, put them behind you. If you have plots, bring them to completion. Make your final plays, for this... this is the end." `);
       }
     if (msg.content.startsWith('>gandalfquote1')) {
     msg.channel.send(`"FLY YOU FOOLS!"`);
       }
     if (msg.content.startsWith('>gandalfquote2')) {
-    msg.channel.send('"Fool of a Took!"');
+    msg.channel.send(`"Fool of a Took!"`);
     }
 
     if (msg.content.startsWith('>createchannel')) {
-      var name = msg.content.replace('>createchannel ', '');
+      var name = msg.content.replace('>createchannel ', '')
       msg.guild.channels.create(name)
     }
 });
