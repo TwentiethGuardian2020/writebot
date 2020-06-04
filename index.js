@@ -2,13 +2,13 @@ var Discord = require("discord.js")
 Discord = new Discord.Client()
 Discord.on('message', async (msg) => {
     if (msg.author.bot) return;
-    if (msg.content.startsWith('.remind')) {
+    if (msg.content.startsWith('>remind')) {
     msg.channel.send(`WRITE, YOU FOOL, WRITE! ${msg.mentions.members.first()}`);
     }
-    if (msg.content.startsWith('.moirainequote')) {
+    if (msg.content.startsWith('>moirainequote')) {
     msg.channel.send(`"The Wheel weaves as the Wheel wills."`);
     }
-    if (msg.content.startsWith('.randquote1')) {
+    if (msg.content.startsWith('>randquote1')) {
     msg.channel.send(` || "Here is your flaw, Shaitan, Lord of the Dark, Lord of Envy, Lord of Nothing, here is why you fail. It was not about me. It’s never been about me.”
     It was about a woman, torn and beaten down, cast from her throne and made a puppet. A woman who had crawled when she had to. That woman still fought.
     It was about a man that love repeatedly forsook. A man who found relevance in a world that others would have let pass them by. A man who remembered stories and who took fool boys under his wing when the smarter move would have been to keep on walking. That man still fought.
@@ -19,26 +19,26 @@ Discord.on('message', async (msg) => {
     It was about a woman who would not bend her back while she was beaten, and who shown with a light for all who watched, including Rand.
     It was about them all." || `);
     }
-    if (msg.content.startsWith('.randquote2')) {
+    if (msg.content.startsWith('>randquote2')) {
     msg.channel.send(`"What can be done... can be undone."`);
     }
-    if (msg.content.starsWith('.randquote3')) {
+    if (msg.content.starsWith('>randquote3')) {
     msg.channel.send(' "How do you fight someone smarter than yourself?" Rand whispered. "The anser is simple. You make her think that you are sitting down across the table from her, ready to play her game. Then you punch her in the face as hard as you can.”')
     }
-    if (msg.content.starsWith('.WoTquote')) {
+    if (msg.content.starsWith('>WoTquote')) {
     msg.channel.send(' "The last days are upon us. If you have grudges, put them behind you. If you have plots, bring them to completion. Make your final plays, for this... this is the end." ')
       }
-    if (msg.content.startsWith('.LoTRquote1')) {
+    if (msg.content.startsWith('>gandalfquote1')) {
     msg.channel.send(`"YOU...SHALL NOT... PASS!"`);
       }
-    if (msg.content.startsWith('.LoTRquote2')) {
+    if (msg.content.startsWith('>gandalfquote2')) {
     msg.channel.send(`"FLY YOU FOOLS!"`);
       }
-    if (msg.content.startsWith('.LoTRquote3')) {
+    if (msg.content.startsWith('>gandalfquote3')) {
     msg.channel.send('"Fool of a Took!"')
     }
 
-    if (msg.content.startsWith('.createchannel')) {
+    if (msg.content.startsWith('>createchannel')) {
       var name = msg.content.replace('>createchannel ', '')
       msg.guild.channels.create(name)
     }
