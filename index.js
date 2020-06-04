@@ -16,9 +16,5 @@ Discord.on('message', async (msg) => {
       var name = msg.content.replace('createchannel ', '')
       msg.guild.channels.create(name)
     }
-    if (msg.content.startsWith('>createcategory')) {
-      var name = msg.content.replace('createcategory ', '')
-      msg.guild.categories.create(name)
-    }
 });
 Discord.login(process.env.TOKEN)
