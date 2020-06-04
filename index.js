@@ -8,7 +8,7 @@ Discord.on('message', async (msg) => {
     if (msg.content.startsWith('>wotquote')) {
     msg.channel.send(` "The Wheel weaves as the Wheel wills." `);
       }
-    if (msg.content.startsWith('>gandalfquote2')) {
+    if (msg.content.startsWith('>lotrquote')) {
     msg.channel.send(` "Fool of a Took!" `);
     }
 
