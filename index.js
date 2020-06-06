@@ -10,7 +10,6 @@ Discord.on('message', async (msg) => {
     if (msg.content.startsWith('>SPOILERZ')) {
     msg.channel.send(`SPOILER, YOU FOOL! ${msg.mentions.members.first()}`);
     }
-
     if (msg.content.startsWith('>wotquote')) {
     msg.channel.send(` "The Wheel weaves as the Wheel wills." `);
     }
@@ -28,5 +27,8 @@ Discord.on('message', async (msg) => {
       var name = msg.content.replace('createchannel ', '')
       msg.guild.channels.create(name)
     }
-});
+    if (msg.content.startsWith('>help')) {
+      msg.channel.send(` >remind (@user): 'WRITE, YOU FOOL, WRITE'  >SPOILERZ (@user): 'SPOILER, YOU FOOL!'  >wotquote: ' "The Wheel weaves as the Wheal wills." '  >lotrquote: ' "Fool of a Took!" '  >starwarsquote: ' "In a galaxy far far away..." '  >avatarquote: ' "My previous girlfriend turned into the moon." "That's rough buddy." ' `)
+    }
+  });
 Discord.login(process.env.TOKEN)
