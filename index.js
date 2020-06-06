@@ -16,7 +16,10 @@ Discord.on('message', async (msg) => {
     msg.channel.send(` "Fool of a Took!" `);
     }
     if (msg.content.startsWith('>starwarsquote')) {
-      msg.channel.send(` "In a galaxy far far away..." `);
+    msg.channel.send(` "In a galaxy far far away..." `);
+    }
+    if (msg.content.startsWith('>avatarquote')) {
+    msg.channel.send(` "My previous girlfriend turned into the moon." "That's rough buddy." `);
     }
 
     if (msg.content.startsWith('>createchannel')) {
