@@ -10,6 +10,11 @@ Discord.on('message', async (msg) => {
     if (msg.content.startsWith('>spoilerz')) {
     msg.channel.send(`SPOILERS, YOU FOOL! ${msg.mentions.members.first()}`);
     }
+    if (msg.content.startsWith('>huh')) {
+    msg.channel.send(` Huh 
+                       Huh 
+                       Huh `);
+    }
     if (msg.content.startsWith('>wotquote')) {
     msg.channel.send(` "The Wheel weaves as the Wheel wills." `);
     }
