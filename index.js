@@ -7,8 +7,8 @@ Discord.on('message', async (msg) => {
     }
     if (msg.content.startsWith('>submit'))
     msg.channel.send(`New submission ${msg.mentions.members.first()}`)
-    if (msg.content.startsWith('>SPOILERZ')) {
-    msg.channel.send(`SPOILER, YOU FOOL! ${msg.mentions.members.first()}`);
+    if (msg.content.startsWith('>spoilerz')) {
+    msg.channel.send(`SPOILERS, YOU FOOL! ${msg.mentions.members.first()}`);
     }
     if (msg.content.startsWith('>wotquote')) {
     msg.channel.send(` "The Wheel weaves as the Wheel wills." `);
@@ -28,7 +28,7 @@ Discord.on('message', async (msg) => {
       msg.guild.channels.create(name)
     }
     if (msg.content.startsWith('>help')) {
-      msg.channel.send(` *>remind (@user)*: 'WRITE, YOU FOOL, WRITE'  *>SPOILERZ (@user)*: 'SPOILER, YOU FOOL!'  *>wotquote*: ' "The Wheel weaves as the Wheal wills." '  *>lotrquote*: ' "Fool of a Took!" '  *>starwarsquote*: ' "In a galaxy far far away..." '  *>avatarquote*: ' "My previous girlfriend turned into the moon." "That's rough buddy." ' `)
+      msg.channel.send(`*>remind (@user)*: 'WRITE, YOU FOOL, WRITE' *>spoilerz (@user)*: 'SPOILER, YOU FOOL!' *>wotquote*: ' "The Wheel weaves as the Wheal wills." ' *>lotrquote*: ' "Fool of a Took!" ' *>starwarsquote*: ' "In a galaxy far far away..." '  *>avatarquote*: ' "My previous girlfriend turned into the moon." "That's rough buddy." ' ${msg.mentions.members.first()}`)
     }
   });
 Discord.login(process.env.TOKEN)
